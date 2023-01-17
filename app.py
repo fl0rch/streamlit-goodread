@@ -9,11 +9,11 @@ image = Image.open('godread.jpg')
 st.image(image)
 
 st.title('Predict average rating the books')
-rating_count = st.number_input('Enter rating_count', step=10.00)
-num_pages = st.number_input('Enter num_pages', min_value=49, max_value=1500, step=10)
+rating_count = st.number_input('Enter total rating votes', step=10.00)
+num_pages = st.number_input('Enter number of pages', min_value=49, max_value=1500, step=10)
 authors = st.text_input('Enter author name', placeholder='Agatha Christie')
 language = st.selectbox(
-    'Select language',
+    'Select the language in which it is written',
     ('spa', 'en-US', 'eng', 'fre')
 )
 
